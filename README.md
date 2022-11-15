@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# [Ecole du Web](https://www.ecole-du-web.net/) - React - Accordion
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
