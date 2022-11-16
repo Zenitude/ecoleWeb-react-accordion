@@ -28,8 +28,13 @@ export default function Accordion() {
     return (
         <div className='accordion'>
             <button onClick={changeToggle}>Afficher / Masquer <img src={chevron} style={rotateChevron}/></button>
-            <p ref={heightRefP} style={styleText} className={toggle ? "textAccordion activeAccord" : "textAccordion"}>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. At itaque repudiandae, atque sit excepturi voluptas. Accusantium quidem dolore modi exercitationem consequuntur doloremque illo sapiente vitae sequi? Exercitationem quas cumque consectetur soluta delectus dolorum? Fugiat magnam tempore, qui itaque, esse recusandae voluptate iure voluptatum dolore sint sapiente, minus dolorem nulla officia.
+            <p 
+                ref={heightRefP} 
+                style={styleText} 
+                className={toggle ? "textAccordion activeAccord" : "textAccordion"}
+                aria-hidden={toggle ? "true" : "false"}
+            >
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At itaque repudiandae, atque sit excepturi voluptas. Accusantium quidem dolore modi exercitationem consequuntur doloremque illo sapiente vitae sequi? Exercitationem quas cumque consectetur soluta delectus dolorum? Fugiat magnam tempore, qui itaque, esse recusandae voluptate iure voluptatum dolore sint sapiente, minus dolorem nulla officia.
             </p>
             
         </div>
