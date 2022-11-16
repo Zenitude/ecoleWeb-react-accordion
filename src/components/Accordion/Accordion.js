@@ -27,7 +27,8 @@ export default function Accordion() {
 
     return (
         <div className='accordion'>
-            <button onClick={changeToggle}>Afficher / Masquer <img src={chevron} style={rotateChevron}/></button>
+            <button 
+                onClick={changeToggle}>Afficher / Masquer <img src={chevron} style={rotateChevron}/></button>
             <p 
                 ref={heightRefP} 
                 style={styleText} 
