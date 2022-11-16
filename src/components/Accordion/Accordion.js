@@ -15,7 +15,6 @@ export default function Accordion() {
 
     useEffect(() => {
         setHeightText(`${heightRefP.current.scrollHeight + 18}`)
-        console.log(heightRefP);
     }, [])
 
     const styleText = {
