@@ -1,0 +1,68 @@
+.accordion
+{
+    width: 50%;
+    max-width: 500px;
+    min-width: 260px;
+    margin: 0 auto;
+    height: auto;
+}
+
+.accordion button
+{
+    width: 100%;
+    color: #fff;
+    text-align: start;
+    padding: 15px 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    background-color: rgb(33, 33, 167);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(0,0,0,0.2);
+    border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -ms-border-radius: 5px 5px 0 0;
+    -o-border-radius: 5px 5px 0 0;
+}
+
+.accordion button img
+{
+    width: 25px;
+    height: 25px;
+    transition: transform 0.4s ease-in-out;
+    -webkit-transition: transform 0.4s ease-in-out;
+    -moz-transition: transform 0.4s ease-in-out;
+    -ms-transition: transform 0.4s ease-in-out;
+    -o-transition: transform 0.4s ease-in-out;
+}
+
+.accordion .textAccordion
+{
+    opacity: 0;
+    background-color: #fff;
+    padding: 15px;
+    text-align: justify;
+    border: 1px solid rgb(0,0,0,0.2);
+    border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    -ms-border-radius: 0 0 5px 5px;
+    -o-border-radius: 0 0 5px 5px;
+    transition: opacity 0.4s ease-in-out, height 0.4s 0.4s ease-out;
+    -webkit-transition: opacity 0.4s ease-in-out, height 0.4s 0.4s ease-out;
+    -moz-transition: opacity 0.4s ease-in-out, height 0.4s 0.4s ease-out;
+    -ms-transition: opacity 0.4s ease-in-out, height 0.4s 0.4s ease-out;
+    -o-transition: opacity 0.4s ease-in-out, height 0.4s 0.4s ease-out;
+}
+
+.textAccordion.activeAccord
+{
+    opacity: 1;
+    transition: height 0.4s ease-out, opacity 0.4s 0.4s ease-in-out;
+    -webkit-transition: height 0.4s ease-out, opacity 0.4s 0.4s ease-in-out;
+    -moz-transition: height 0.4s ease-out, opacity 0.4s 0.4s ease-in-out;
+    -ms-transition: height 0.4s ease-out, opacity 0.4s 0.4s ease-in-out;
+    -o-transition: height 0.4s ease-out, opacity 0.4s 0.4s ease-in-out;
+}
